@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    transition: all .5s linear;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #27ac60;
+}
+.wrapper{
+    background: #fff;
+    width: 420px;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.wrapper .task-input{
+    border: .1rem solid #d1d1d1;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.wrapper .task-input input{
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.5rem;
+}
+.wrapper .controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.wrapper .controls .filters{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.controls .filters span{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.controls .filters span.active{
+    color: #27ac60;
+}
+.wrapper .task-box .task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f4f4f4;
+    padding: 1.5rem 1.5rem;
+}
+.wrapper .task-box .task label{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.wrapper .task-box .setting{
+    position: relative;
+}
+.wrapper .task-box .task p{
+    user-select: none;
+}
+.wrapper .task-box .task p.checked{
+    text-decoration: line-through;
+}
+.wrapper .task-box .setting i{
+    cursor: pointer;
+    font-size: 2rem;
+}
+.wrapper .setting .task-menu{
+    background: #fff;
+    z-index: 100;
+    position: absolute;
+    right: -5px;
+    border-radius: .5rem;
+    display: none;
+}
+.wrapper .setting .task-menu.show{
+    display: inline-block;
+}
+.wrapper .setting .task-menu li{
+    display: flex;
+    padding: 1rem 1rem;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
